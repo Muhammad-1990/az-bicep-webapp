@@ -1,29 +1,39 @@
 on: [push]
 name: Azure ARM
 jobs:
-  build-and-deploy:
+  provision:
     runs-on: ubuntu-latest
     steps:
 
-      # Checkout code
     - uses: actions/checkout@main
 
-      # Log into Azure
     - uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      # Deploy Bicep file
-    #- name: deploy
-    #  uses: azure/arm-deploy@v1
-    #  with:
-    #    subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
-    #    template: ./main.bicep
-    #    failOnStdErr: false
-    
+        
     - name: Azure CLI script
       uses: azure/CLI@v1
       with:
         azcliversion: 2.30.0
         inlineScript: |
           az deployment sub create --location southafricanorth --template-file ./template/main.bicep
+  
+  deploy:
+    runs-on: ubuntu-latest
+    needs: provision
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: dotnet publish
+        run: dotnet publish -c Release -o publish/myApp
+        
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      
+      - name: Deploy to App Service
+        uses: azure/webapps-deploy@v2
+        with: 
+          app-name: mosvcapp #${{ needs.provision.outputs.appServiceName }} 
+          package: ./src/myApp/publish/myApp
