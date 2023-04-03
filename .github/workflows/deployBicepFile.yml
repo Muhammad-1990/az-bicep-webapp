@@ -14,9 +14,16 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       # Deploy Bicep file
-    - name: deploy
-      uses: azure/arm-deploy@v1
+    #- name: deploy
+    #  uses: azure/arm-deploy@v1
+    #  with:
+    #    subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
+    #    template: ./main.bicep
+    #    failOnStdErr: false
+    
+    - name: Azure CLI script
+      uses: azure/CLI@v1
       with:
-        subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
-        template: ./main.bicep
-        failOnStdErr: false
+        azcliversion: 2.30.0
+        inlineScript: |
+          az deployment sub create --location southafricanorth --template-file ./main.bicep
