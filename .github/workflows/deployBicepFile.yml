@@ -26,4 +26,4 @@ jobs:
       with:
         azcliversion: 2.30.0
         inlineScript: |
-          az deployment sub create --location southafricanorth --template-file ./main.bicep
+          az deployment sub create --location southafricanorth --template-file ./template/main.bicep
