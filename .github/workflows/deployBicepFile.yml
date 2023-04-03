@@ -36,4 +36,4 @@ jobs:
         uses: azure/webapps-deploy@v2
         with: 
           app-name: mosvcapp #${{ needs.provision.outputs.appServiceName }} 
-          package: ./src/myApp/publish/myApp
+          package: .publish/myApp
