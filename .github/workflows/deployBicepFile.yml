@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v3
       
       - name: dotnet publish
-        run: dotnet publish -c Release -o publish/myApp
+        run: dotnet publish
         
       - name: Azure Login
         uses: azure/login@v1
@@ -36,4 +36,4 @@ jobs:
         uses: azure/webapps-deploy@v2
         with: 
           app-name: mosvcapp #${{ needs.provision.outputs.appServiceName }} 
-          package: .publish/myApp
+          #package: .publish/myApp
