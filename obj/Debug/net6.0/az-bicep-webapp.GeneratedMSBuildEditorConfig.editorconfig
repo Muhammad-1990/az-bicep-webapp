@@ -8,37 +8,37 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = az_bicep_webapp
 build_property.RootNamespace = az_bicep_webapp
-build_property.ProjectDir = C:\code\az-bicep-webapp\
+build_property.ProjectDir = c:\code\az-bicep-webapp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\code\az-bicep-webapp
+build_property.MSBuildProjectDirectory = c:\code\az-bicep-webapp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/code/az-bicep-webapp/Pages/Error.cshtml]
+[c:/code/az-bicep-webapp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/code/az-bicep-webapp/Pages/Index.cshtml]
+[c:/code/az-bicep-webapp/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/code/az-bicep-webapp/Pages/Privacy.cshtml]
+[c:/code/az-bicep-webapp/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/code/az-bicep-webapp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[c:/code/az-bicep-webapp/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/code/az-bicep-webapp/Pages/_ViewImports.cshtml]
+[c:/code/az-bicep-webapp/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/code/az-bicep-webapp/Pages/_ViewStart.cshtml]
+[c:/code/az-bicep-webapp/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/code/az-bicep-webapp/Pages/Shared/_Layout.cshtml]
+[c:/code/az-bicep-webapp/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-zmfvefr08y
